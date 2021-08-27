@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="icon" href="./images/logo.png">
+    <title>STUDENT | WEBSITE NAME</title>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg nav-bg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CloneScape</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse nav-links"
+            id="navbarTogglerDemo02"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-1">
+                <a class="p-2 navbar-items" aria-current="page" href="#"
+                  >Submission</a
+                >
+              </li>
+              <li class="nav-item px-1">
+                <a class="p-2 navbar-items" href="#">Contact</a>
+              </li>
+              <li class="nav-item px-1">
+                <a class="p-2 navbar-items" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section>
+        <div class="text-end fs-5">
+            <p class="pt-3 px-3">
+                <span id="datetime"></span>
+            </p>
+            <p class="px-3">
+                <img src="./images/faceIcon.png" class="px-1" style="max-width: 30px; max-height: 30px;">Shruti Tiwari
+            </p>
+        <div>
+    </section>
+    <section class="mx-4 my-4 mx-lg-5 table-responsive">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">File</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>English</td>
+                    <td>
+                        <div class="me-0">
+                            <form>
+                                <input type="file" id="myFile" class="Uploadfile" name="filename">
+                                <input type="submit" class="submitBtn my-1">
+                            </form>
+                        </div>
+                    </td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>History</td>
+                    <td>Report5.pdf</td>
+                    <td>submitted</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Science</td>
+                    <td>EXP2.docx</td>
+                    <td>submitted</td>
+                  </tr>
+                </tbody>
+              </table>
+    </section>
+
+    <script>
+        let dt = new Date();
+        const monthNames = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug","Sept","Oct", "Nov", "Dec"];
+        document.getElementById("datetime").innerHTML = 'Aug 29, 2021 14:22:10'
+        setInterval(function () {
+            const d = new Date();
+            let sec = d.getSeconds();
+            let min = d.getMinutes();
+            let hr = d.getHours();
+            let today = d.getDate();
+            let month = monthNames[d.getMonth()];
+            let yr = d.getFullYear();
+
+          document.getElementById("datetime").innerHTML = month + " "+ today+", "+yr+" "+hr+":"+min+":"+sec;
+
+        }, 1000);
+    </script>
+  </body>
+</html>

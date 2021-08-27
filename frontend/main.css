@@ -1,0 +1,86 @@
+body {
+  font-family: "Crimson Text", serif;
+}
+.nav-bg {
+  background-color: #f9d976;
+}
+.nav-links {
+  font-size: 20px;
+}
+.navbar-items {
+  color: black;
+  text-decoration: none;
+}
+.navbar-items:hover {
+  cursor: pointer;
+  color: #e28a6f;
+  transition-delay: ease 0.2s;
+}
+.home-section {
+  background-image: url("./images/wave.png");
+  min-height: 500px;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.home-account-card {
+  position: absolute;
+  top: 230px;
+  right: 0;
+  left: 0;
+}
+.home-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+.home-card-img {
+  max-height: 70px;
+}
+.accountTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+.login-form {
+  border: none;
+  border-bottom: 2px solid #f39f86;
+  width: 200px;
+}
+.login-form:hover {
+  color: #e28a6f;
+}
+.login-submit {
+  color: #ffff;
+  background-color: #d7a60f;
+  border: none;
+  margin-left: 90px;
+}
+.login-submit:hover {
+  background-color: #dabe67;
+  transition: ease 0.4ms;
+}
+.register-submit {
+  color: #ffff;
+  background-color: #d7a60f;
+  border: none;
+  text-decoration: none;
+}
+.register-submit:hover {
+  background-color: #dabe67;
+  transition: ease 0.4ms;
+}
+/* ---------------HOME ENDS-------------------- */
+/*------------- STUDENT PAGE STARTS------------ */
+.Uploadfile {
+  color: #d7a60f;
+  font-size: 15px;
+}
+.submitBtn {
+  text-decoration: none;
+  background: #f39f86;
+  border: none;
+  border-radius: 5px;
+}
+.submitBtn:hover {
+  transition: ease;
+  background-color: #e28a6f;
+}
