@@ -1,2 +1,3 @@
-# Error-By-Night
-An E-learning based project for an hackathon "Error By Night". 
+# CloneScape
+
+An E-learning based website project for student submissions and management.
